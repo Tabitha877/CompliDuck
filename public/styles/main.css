@@ -1,0 +1,131 @@
+.fuzzy-bubbles-regular {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuzzy-bubbles-bold {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.dynapuff-logo {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(-45deg, black, rgb(73, 73, 73), rgb(22, 22, 22), black);
+    background-size: 400% 400%;
+    animation: gradient 25s ease-in-out infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#logo {
+    color: white;
+    font-size: 3rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 1rem 2rem;
+    text-shadow: .15rem .15rem 1rem #df9902;
+}
+
+img {
+    border: .75rem double #df9902;
+    box-shadow: 0 0 .5rem #3f2b00;
+    border-radius: 25%;
+    position: relative;
+    height: 600px;
+    width: 500px;
+    z-index: 1;
+
+    animation-name: hover;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+    animation-play-state: paused;  
+}
+
+@keyframes hover {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+img:active,
+img:focus,
+img:hover {
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+#hoverme {
+    color: #df99028f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#compliment {
+    
+    color: #df9902;
+    margin: .5rem;
+    padding: .5rem 1rem;
+}
+
+#new-button {
+    margin: 1rem;
+    padding: .5rem 1rem;
+    color:#3f2b00;
+    background-color: #df99028f;
+    border: solid 1px #3f2b00;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #3f2b00;
+}
+
+#new-button:hover {
+    background-color: #df9902;
+}
+
+#new-button:active {
+    background-color: #3f2b00;
+    box-shadow: inset 0 0 5px #2b1d00;
+    border-color: #2b1d00;
+    color: #df99028f;
+}

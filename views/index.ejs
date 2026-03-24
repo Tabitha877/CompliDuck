@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- font type -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <!-- logo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <title>CompliDuck</title>
+</head>
+<body>
+    <header>
+        <div class="dynapuff-logo" id="logo">CompliDuck</div>
+    </header>
+    <div id="image-container">
+        <% let imageURL = JSON.parse(randomDuck) %>
+        <img  src="<%= imageURL %>"  >
+    </div>
+    <div id="hoverme" class="fuzzy-bubbles-bold">Hover me</div>
+    <div id="compliment" class="fuzzy-bubbles-regular"><%= compliment %></div>
+    <button id="new-button" type="button" onclick="window.location.reload();">New</button>
+</body>
+</html>
