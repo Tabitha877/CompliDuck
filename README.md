@@ -1,15 +1,15 @@
-#CompliDuck
+# CompliDuck
 
-##About
+## About
 CompliDuck is a webpage with random duck images and heartfelt compliments to cheer you up!
 
 ## installation
 + Clone the repo 
 + Go to your code edditor
 + cd into the folder
-+ install dependencies
++ Install dependencies
   `npm i`
-+ run the code with nodemon / node
++ Run the code with nodemon / node
   `nodemon index.js`
   `node index.js`
 + Type in your google search bar ***localhost:3000***
